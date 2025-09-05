@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dolomia HTML Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="assets/css/puredesign.css">
+
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+
+    <!-- Owl -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
+      <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--  loader  -->
+    <div id="myloader">
+        <span class="loader">
+                <div class="inner-loader"></div>
+            </span>
+    </div>
+
+    <!--  Main Wrap  -->
+    <div id="main-wrap" class="full-width">
+        <!--  Header & Menu  -->
+        <header id="header" class="fixed transparent full-width">
+            <div class="container">
+                 <nav class="navbar navbar-default white">
+                    <!--  Header Logo  -->
+                    <div id="logo">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo/dc-group-Photoroom.png" class="normal" alt="logo">
+                            <img src="assets/img/logo/dc-group-Photoroom.png" class="retina" alt="logo">
+                            <img src="assets/img/logo/dc-group-Photoroom.png" class="normal white-logo" alt="logo">
+                            <img src="assets/img/logo/dc-group-Photoroom.png" class="retina white-logo" alt="logo">
+                        </a>
+                    </div>
+                    <!--  END Header Logo  -->
+                    <!--  Classic menu, responsive menu classic  -->
+                    <div id="menu-classic">
+                        <div class="menu-holder">
+                            <ul>
+                                <li class="submenu main-menu">
+                                    <a href="index.html" class="active-item">Home</a>
+                                </li>
+                                <li class="submenu main-menu">
+                                  <a href="javascript:void(0)">About Us</a>
+                                  <ul class="sub-menu">
+
+                                    <!-- About Me with sub-dropdown -->
+                                    <li class="submenu m-0 submenu-padding">
+                                      <a href="our-purpose.html">Our Purpose</a></li>
+                                
+                                    <li class="m-0"><a class="p-0" href="our-chairman.html">Our Chairman</a></li>
+                                    <li class="m-0"><a class="p-0" href="our-team.html">Our Team</a></li>
+                                    <li class="m-0"><a class="p-0" href="why-choose-us.html">Why choose us</a></li>
+                                    <li class="m-0"><a class="p-0" href="our-client.html">Clients</a></li>
+                                    <li class="m-0"><a class="p-0" href="gallery.html">Gallery</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>
+                                   <a href="javascript:void(0)"  id="destToggle">Destinations</a>
+                                     <div class="mega-overlay" id="megaOverlay"></div>
+
+                                         <div class="mega-menu" id="megaMenu" aria-hidden="true" role="dialog" aria-label="Destinations menu">
+                                           <button class="close-btn" id="megaClose" aria-label="Close menu">×</button>
+                                           <div class="mega-menu-inner">
+                                             <!-- Regions -->
+                                             <ul class="regions" role="menu">
+                                               <a href="africa.html"> <li data-region="africa" onmouseover="showCountries('africa'); showRegionImage('africa')">Africa<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="arctic.html"><li data-region="arctic" onmouseover="showCountries('arctic'); showRegionImage('arctic')">Arctic Circle<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="asia.html"><li data-region="asia" onmouseover="showCountries('asia'); showRegionImage('asia')">Asia<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="caribbean" onmouseover="showCountries('caribbean'); showRegionImage('caribbean')">Caribbean<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="europe" onmouseover="showCountries('europe'); showRegionImage('europe')">Europe<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="indian-ocean" onmouseover="showCountries('indian-ocean'); showRegionImage('indian-ocean')">Indian Ocean<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="indian-subcontinent" onmouseover="showCountries('indian-subcontinent'); showRegionImage('indian-subcontinent')">Indian Subcontinent<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="latin-america" onmouseover="showCountries('latin-america'); showRegionImage('latin-america')">Latin America<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="middle-east" onmouseover="showCountries('middle-east'); showRegionImage('middle-east')">Middle East<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="north-america" onmouseover="showCountries('north-america'); showRegionImage('north-america')">North America<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="south-east-asia" onmouseover="showCountries('south-east-asia'); showRegionImage('south-east-asia')">South East Asia<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="south-pacific" onmouseover="showCountries('south-pacific'); showRegionImage('south-pacific')">South Pacific<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="a-z" onmouseover="showCountries('a-z'); showRegionImage('a-z')">A-Z Destinations<i class="bi bi-chevron-right"></i></li></a>
+                                             </ul>
+
+                                             <!-- Countries -->
+                                             <ul class="countries" id="africa">
+                                               <a href="botswana.html"><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Botswana</li></a>
+                                               <a href=""><li onmouseover="showImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREz1vhsMDCWcnSk6hDnaXuDiu8zLKRQlrUaddOcWd79DOvLB_nKujwIK-pbMsSUW0H004&usqp=CAU')">Congo</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>
+                                               <a href=""><li onmouseover="showImage('https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill')">Egypt</li></a>   
+                                             </ul>
+                                             <ul class="countries" id="arctic">
+                                               <a href=""><li onmouseover="showImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVg5HeAbbtBW8wyv9mzq_sEwoPoyAFw8gSU594KJt1kCJ0JBtXvncpwL1v2kU5Ocp8Tw&usqp=CAU')">Arctic Country 1</li></a>
+                                             </ul>
+                                             <ul class="countries" id="asia">
+                                               <a href=""><li onmouseover="showImage('https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/01/05163144/11-4.jpg')">India</li></a>
+                                               <a href=""><li onmouseover="showImage('https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/01/05163144/11-4.jpg')">China</li></a>
+                                             </ul>
+                                             <!-- Add other regions similarly -->
+
+                                             <div class="preview">
+                                               <img id="menuImage" src="https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill" alt="Destination preview">
+                                             </div>
+                                           </div>
+                                         </div>
+                                </li>
+                                <li>
+                                    <a href="package.html">Package</a>
+                                </li>
+                                <li class="submenu main-menu">
+                                    <a href="javascript:void(0)">Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery.html">Classic</a></li>
+                                        <li><a href="gallery-filters.html">Filters</a></li>
+                                        <li><a href="single-project-1.html">Single Project 1</a></li>
+                                        <li><a href="single-project-2.html">Single Project 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu main-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-classic.html">Blog Classic</a></li>
+                                        <li><a href="standard-post.html">Image Post</a></li>
+                                        <li><a href="slider-post.html">Slider Post </a></li>
+                                        <li><a href="video-post.html">Video Post</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="elements.html">Elements</a>
+                                </li>
+                                <li>
+                                    <a href="contact-1.html">Contact</a>
+                                </li>
+                                <!-- Search Icon -->
+                                <li class="search">
+                                    <i class="icon ion-ios-search"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  END Classic menu, responsive menu classic  -->
+                    <!--  Button for Responsive Menu Classic  -->
+                    <div id="menu-responsive-classic">
+                        <div class="menu-button">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                        </div>
+                    </div>
+                    <!--  END Button for Responsive Menu Classic  -->
+                    <!--  Search Box  -->
+                    <div id="search-box" class="full-width">
+                        <form role="search" id="search-form" class="black big">
+                            <div class="form-input">
+                                <input class="form-field black big" type="search" placeholder="Search...">
+                                <span class="form-button big">
+                                        <button type="button">
+                                            <i class="icon ion-ios-search"></i>
+                                        </button>
+                                    </span>
+                            </div>
+                        </form>
+                        <button class="close-search-box">
+                                <i class="icon ion-ios-close-empty"></i>
+                            </button>
+                    </div>
+                    <!--  END Search Box  -->
+                </nav>
+            </div>
+        </header>
+        <!--  END Header & Menu  -->
+
+        <!--  Page Content, class footer-fixed if footer is fixed  -->
+        <div id="page-content" class="">
+            <!--  Slider  -->
+            <div id="flexslider" class="fullpage-wrap small">
+                <ul class="slides">
+                    <li style="background-image:url(assets/img/trip3.jpg); height: 85vh !important;">
+                        <div class="container text text-center">
+                            <h1 class="white margin-bottom-small">Why Travel With DC Group</h1>
+                            <p class="heading white">Because trust, quality, and experience make all the difference..</p>
+                        </div>
+                        <div class="gradient dark"></div>
+                    </li>
+                    <ol class="breadcrumb">
+                        <li><a href="#">About Us</a></li>
+                        <li class="active">Why Choose Us</li>
+                    </ol>
+                </ul>
+            </div>
+            <!--  END Slider  -->
+
+           <section class="Building-trust-intro-about" aria-label="Introduction about Melissa and her dog">
+              <div class="Building-trust-intro-about__image-wrapper">
+                <div class="Building-trust-intro-about__main-circle" aria-hidden="true">
+                  <img src="./assets/img/packages/kerala.jpg" 
+                    alt="Woman sitting with dog outdoors" class="Building-trust-intro-about__main-image" />
+                  <div class="Building-trust-intro-about__small-circle Building-trust-intro-about__small-circle--left" aria-hidden="true">
+                    <img src="./assets/img/packages/Malaysia.jpg" 
+                         alt="Photo of dog raising paw" class="Building-trust-intro-about__small-image" />
+                  </div>
+                  <div class="Building-trust-intro-about__small-circle Building-trust-intro-about__small-circle--right" aria-hidden="true">
+                    <img src="./assets/img/packages/Manali.jpg" 
+                         alt="Smiling woman portrait" class="Building-trust-intro-about__small-image" />
+                  </div>
+                  <div class="Building-trust-intro-about__curved-text" aria-hidden="true">Travel simple. Experience more.</div>
+                </div>
+              </div>
+              <div class="Building-trust-intro-about__text-content">
+                <h1 class="Building-trust-intro-about__heading">
+                 Our Story
+                </h1>
+                <div class="Building-trust-intro-about__signature" aria-label="Signature of Melissa Johanson">
+                 A Journey Built on Trust & Excellence
+                </div>
+                <p class="Building-trust-intro-about__paragraph">
+                  DC Group officially began on 1st August 2025, but its story started in 2012 when Mr. Pravin Chaudhari opened a small travel office with a dream to make travel simple and memorable. Over time, he created four specialized companies — DC Tours & Travels, DC Insurance, DC The Travel Expert, and DC Holidays — each serving a unique purpose.
+                </p>
+                <p class="Building-trust-intro-about__paragraph">
+                  In 2025, his son, Mr. Darvin Chaudhari, brought them together under one brand, DC Group. Today, the group serves 50,000+ travelers, agents, and corporations across India and beyond, turning a humble vision into a trusted legacy.
+                </p>
+              </div>
+            </section>
+
+            <section class="guiding-principles" aria-label="Guiding Principles That Drive Everything We Do">
+              <div class="container">
+                <div class="guiding-principles__top">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Woman holding map with mountain background" class="guiding-principles__image-main" />
+                
+                <div class="guiding-principles__content">
+                  <p class="guiding-principles__subheading">Who We Are</p>
+                  <h2 class="guiding-principles__heading">Guiding Principles That Drive Everything We Do.</h2>
+                  <p class="guiding-principles__description">
+                    At DC Group, our foundation rests on a clear vision, a strong mission, and timeless values inherited from our founder.
+                  </p>
+                
+                  <img src="./assets/img/packages/Singapore.avif" alt="Woman climbing mountain in green valley" class="guiding-principles__image-secondary" />
+                </div>
+              </div>
+              
+              <div class="principles-list">
+                <article class="principle-item" aria-labelledby="mission-title">
+                  <div class="principle-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                  </div>
+                  <div class="principle-item__content">
+                    <strong id="mission-title">Our Mission</strong>
+                    <p>Deliver seamless, safe, and unforgettable travel experiences.</p>
+                  </div>
+                </article>
+                
+                <article class="principle-item" aria-labelledby="vision-title">
+                  <div class="principle-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6a6 6 0 1 1-6 6" />
+                    </svg>
+                  </div>
+                  <div class="principle-item__content">
+                    <strong id="vision-title">Our Vision</strong>
+                    <p>To be the world's most trusted and innovative travel solutions provider.</p>
+                  </div>
+                </article>
+                
+                <article class="principle-item" aria-labelledby="value-title">
+                  <div class="principle-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+                      <polygon points="12 2 15 11 22 11 17 16 19 22 12 18 5 22 7 16 2 11 9 11 12 2" />
+                    </svg>
+                  </div>
+                  <div class="principle-item__content">
+                    <strong id="value-title">Our Value</strong>
+                    <p>Integrity, Excellence, Innovation, Customer Commitment, Teamwork.</p>
+                  </div>
+                </article>
+              </div>
+              </div>
+            </section>
+
+              <section class="values-that-unite-section">
+                    <div class="values-that-unite-container">
+                    
+                      <!-- Left Content -->
+                      <div class="values-that-unite-content">
+                        <div class="values-that-unite-subtitle">A Culture Of Service & Innovation</div>
+                        <h2 class="values-that-unite-title">
+                          Values That Unite Our People And Guide Our Purpose.
+                        </h2>
+                        <p class="values-that-unite-text">
+                          We believe that travel is not just about reaching destinations — it’s about creating memories, trust, and connections.
+                        </p>
+                        <p class="values-that-unite-text">
+                          Our culture is rooted in family values, innovation, and customer care. Every team member shares the same philosophy: 
+                          “Serve each traveler like family, and every journey will become a story worth remembering.”
+                        </p>
+                    
+                        <!-- Features -->
+                        <div class="values-that-unite-features">
+                        
+                  <div class="values-that-unite-feature">
+                    <div class="values-that-unite-feature-icon">
+                      <i class="bi bi-person-check"></i>
+                    </div>
+                    <div>
+                      <h4>Customer First</h4>
+                      <p>Every traveler is treated with personal attention.</p>
+                    </div>
+                  </div>
+              
+                  <div class="values-that-unite-feature">
+                    <div class="values-that-unite-feature-icon">
+                      <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <div>
+                      <h4>Innovation Driven</h4>
+                      <p>Adapting to modern travel needs & technology.</p>
+                    </div>
+                  </div>
+              
+                  <div class="values-that-unite-feature">
+                    <div class="values-that-unite-feature-icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div>
+                      <h4>Team Spirit</h4>
+                      <p>A family-like work environment driving excellence.</p>
+                    </div>
+                  </div>
+              
+                </div>
+
+                      </div>
+                  
+                      <!-- Right Images -->
+                      <div class="values-that-unite-images">
+                        <img src="./assets/img/bg-img/28.jpg" alt="Travel Group">
+                        <img src="./assets/img/bg-img/31.jpg" alt="Family Travel">
+                        <img src="./assets/img/bg-img/44.jpg" class="adventure-travel" alt="Adventure Travel">
+                      </div>
+                    </div>
+                  </section>
+            
+                  
+  <div class="client-testimonials-section">
+    <p class="client-testimonials-title">My Testimonials</p>
+    <p class="client-testimonials-subtitle">What Our Clients Say</p>
+    <p class="client-testimonials-desc">We take pride in delivering the best travel experiences. Here’s what some of our happy customers have to say about us.</p>
+
+    <div class="swiper client-testimonials-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">John Smith</p>
+            <p class="client-testimonials-designation">Travel Enthusiast</p>
+            <p class="client-testimonials-text">From seamless bookings to unforgettable journeys, this team makes travel stress-free and enjoyable.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">Emily White</p>
+            <p class="client-testimonials-designation">Manager</p>
+            <p class="client-testimonials-text">They planned my business trip perfectly. Professional, reliable, and very attentive to detail.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">Emily White</p>
+            <p class="client-testimonials-designation">Manager</p>
+            <p class="client-testimonials-text">They planned my business trip perfectly. Professional, reliable, and very attentive to detail.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">Emily White</p>
+            <p class="client-testimonials-designation">Manager</p>
+            <p class="client-testimonials-text">They planned my business trip perfectly. Professional, reliable, and very attentive to detail.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">Emily White</p>
+            <p class="client-testimonials-designation">Manager</p>
+            <p class="client-testimonials-text">They planned my business trip perfectly. Professional, reliable, and very attentive to detail.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide client-testimonials-slide">
+          <div class="client-testimonials-card">
+            <span class="client-testimonials-quote">“</span>
+            <p class="client-testimonials-name">Emily White</p>
+            <p class="client-testimonials-designation">Manager</p>
+            <p class="client-testimonials-text">They planned my business trip perfectly. Professional, reliable, and very attentive to detail.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="client-testimonials-pagination swiper-pagination"></div>
+    </div>
+  </div>
+
+        </div>
+        <!--  END Page Content, class footer-fixed if footer is fixed  -->
+
+        <!--  Footer. Class fixed for fixed footer  -->
+        <footer class="full-width">
+            <div class="container">
+                <div class="row no-margin">
+                    <div class="col-sm-4 col-md-2 padding-leftright-null">
+                        <h6 class="heading white margin-bottom-extrasmall">Dolomia</h6>
+                        <ul class="sitemap">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Elements</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2 padding-leftright-null">
+                        <h6 class="heading white margin-bottom-extrasmall">Useful Links</h6>
+                        <ul class="useful-links">
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Download Catalog</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 padding-leftright-null">
+                        <h6 class="heading white margin-bottom-extrasmall">Contact Us</h6>
+                        <ul class="info">
+                            <li>Phone <a href="">+39 123456789</a></li>
+                            <li>Mail <a href="">mail@domain.com</a></li>
+                            <li>Monday to Friday <span class="white">9.00 am to 8.00 pm</span><br>Saturday from <span class="white">9.00 am to 12.00 pm</span></li>
+                            <li><a href="">322 Moon St, Venice<br>
+                                    Italy, 1231</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                        <h6 class="heading white margin-bottom-extrasmall">Passionate About Nature</h6>
+                        <p class="grey-light">Sign up for Dolomia mounthly newsletter and get to know more about our latest adventures and much mores...</p>
+                        <div id="newsletter-form" class="padding-onlytop-xs">
+                            <form class="search-form" method="post" action="https://www.aweber.com/scripts/addlead.pl">
+                                <input type="hidden" name="listname" value="[ENTER YOUR AWEBER LIST ID HERE]">
+                                <input type="hidden" name="redirect" value="https://www.example.com/thankyou.htm">
+                                <input type="hidden" name="meta_redirect_onlist" value="https://www.example.com/thankyou.htm">
+                                <input type="hidden" name="meta_adtracking" value="custom form">
+                                <input type="hidden" name="meta_required" value="email">
+                                <input type="hidden" name="meta_forward_vars" value="1">
+                                <div class="form-input">
+                                    <input type="text" id="email" name="email" placeholder="Your email ID" value="">
+                                    <span class="form-button">
+                                            <input type="submit" name="submit" value="Sign Up">
+                                        </span>
+                                </div>
+                            </form>
+                            <p>Is this your website? <a href="https://www.aweber.com/free.htm?id=558205" target="_blank">Claim your form</a> to manage and email your new subscribers!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="row no-margin">
+                        <div class="col-md-8 padding-leftright-null">
+                            &copy; 2016 Dolomia - Hiking &amp; Outdoor Html Template Handmade by <a href="http://www.patrickdavid.it">puredesignThemes</a>
+                        </div>
+                        <div class="col-md-4 padding-leftright-null">
+                            <ul class="social">
+                                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  END Footer. Class fixed for fixed footer  -->
+    </div>
+    <!--  Main Wrap  -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- All js library -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+    <script src="assets/js/jquery.fullPage.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/smooth.scroll.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.countTo.js"></script>
+    <script src="assets/js/jquery.scrolly.js"></script>
+    <script src="assets/js/plugins-scroll.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/pace.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".client-testimonials-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true, // enable loop for seamless scroll
+    speed: 4000, // smooth scrolling speed
+    autoplay: {
+      delay: 0, // no delay between slides
+      disableOnInteraction: false,
+    },
+    allowTouchMove: false, // optional: prevent dragging
+    breakpoints: {
+      300: { slidesPerView: 1 },
+      768: { slidesPerView: 1.2, spaceBetween: 10 },
+      1024: { slidesPerView: 2, spaceBetween: 15 },
+      1400: { slidesPerView: 3, spaceBetween: 20 }
+    }
+  });
+</script>
+
+</body>
+
+</html>

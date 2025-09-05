@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team Section with Tabs and Slider</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        #team {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .awesome-tips-title {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .awesome-tips-heading {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* Tabs */
+        .awesome-tips-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .awesome-tips-tab {
+            background: #eee;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .awesome-tips-tab[aria-selected="true"] {
+            background: #ff7e5f;
+            color: white;
+            font-weight: bold;
+        }
+
+        .awesome-tips-tab:focus {
+            outline: 2px solid #ff7e5f;
+            outline-offset: 2px;
+        }
+
+        /* Swiper container */
+        .awesome-tips-swiper {
+            padding-bottom: 40px;
+        }
+
+        /* Team card */
+        .awesome-tips-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+            text-align: center;
+            user-select: none;
+        }
+
+        .awesome-tips-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .awesome-tips-content {
+            padding: 15px;
+            position: relative;
+        }
+
+        .awesome-tips-social {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .awesome-tips-social li a {
+            color: #555;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .awesome-tips-social li a:hover {
+            color: #ff7e5f;
+        }
+
+        .awesome-tips-description {
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .awesome-tips-description h5 {
+            margin: 0 0 5px 0;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .awesome-tips-description h6 {
+            margin: 0;
+            font-weight: normal;
+            color: #777;
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .swiper-slide {
+                width: 300px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="team" aria-label="Our fabulous team">
+        <div class="awesome-tips-container">
+            <div class="awesome-tips-text-center">
+                <h2 class="awesome-tips-title">Our fabulous team</h2>
+                <p class="awesome-tips-heading">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="awesome-tips-tabs" role="tablist" aria-label="Team categories" id="teamTabs">
+                <button class="awesome-tips-tab" role="tab" aria-selected="true" aria-controls="panel-all" id="tab-all"
+                    tabindex="0" data-filter="all">
+                    All
+                </button>
+                <button class="awesome-tips-tab" role="tab" aria-selected="false" aria-controls="panel-traveller"
+                    id="tab-traveller" tabindex="-1" data-filter="traveller">
+                    By Traveller
+                </button>
+                <button class="awesome-tips-tab" role="tab" aria-selected="false" aria-controls="panel-popular"
+                    id="tab-popular" tabindex="-1" data-filter="popular">
+                    Most Popular
+                </button>
+                <button class="awesome-tips-tab" role="tab" aria-selected="false" aria-controls="panel-month"
+                    id="tab-month" tabindex="-1" data-filter="month">
+                    By Month
+                </button>
+                <button class="awesome-tips-tab" role="tab" aria-selected="false" aria-controls="panel-spotlight"
+                    id="tab-spotlight" tabindex="-1" data-filter="spotlight">
+                    In the Spotlight
+                </button>
+            </div>
+
+            <!-- Slider container -->
+            <div class="swiper awesome-tips-swiper" id="teamSlider" aria-live="polite">
+                <div class="swiper-wrapper">
+                    <!-- Team cards -->
+                    <div class="swiper-slide awesome-tips-card" data-category="traveller popular" role="group"
+                        aria-label="John Doe, Cortina, Italy">
+                        <div class="awesome-tips-content">
+                            <img src="assets/img/hiker1.jpg" alt="John Doe" />
+                            <ul class="awesome-tips-social">
+                                <li><a href="#" aria-label="John Doe Twitter"><i
+                                            class="icon ion-social-twitter"></i></a></li>
+                                <li><a href="#" aria-label="John Doe Dribbble"><i
+                                            class="icon ion-social-dribbble"></i></a></li>
+                                <li><a href="#" aria-label="John Doe Instagram"><i
+                                            class="icon ion-social-instagram"></i></a></li>
+                                <li><a href="#" aria-label="John Doe Snapchat"><i
+                                            class="icon ion-social-snapchat"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="awesome-tips-description">
+                            <h5>John Doe</h5>
+                            <h6>Cortina, Italy</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide awesome-tips-card" data-category="traveller month" role="group"
+                        aria-label="Jessica Simpson, Chamonix-Mont-Blanc, France">
+                        <div class="awesome-tips-content">
+                            <img src="assets/img/hiker2.jpg" alt="Jessica Simpson" />
+                            <ul class="awesome-tips-social">
+                                <li><a href="#" aria-label="Jessica Simpson Twitter"><i
+                                            class="icon ion-social-twitter"></i></a></li>
+                                <li><a href="#" aria-label="Jessica Simpson Dribbble"><i
+                                            class="icon ion-social-dribbble"></i></a></li>
+                                <li><a href="#" aria-label="Jessica Simpson Instagram"><i
+                                            class="icon ion-social-instagram"></i></a></li>
+                                <li><a href="#" aria-label="Jessica Simpson Snapchat"><i
+                                            class="icon ion-social-snapchat"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="awesome-tips-description">
+                            <h5>Jessica Simpson</h5>
+                            <h6>Chamonix-Mont-Blanc, France</h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide awesome-tips-card" data-category="popular spotlight" role="group"
+                        aria-label="Robert Brown, Kitzbühel, Austria">
+                        <div class="awesome-tips-content">
+                            <img src="assets/img/hiker3.jpg" alt="Robert Brown" />
+                            <ul class="awesome-tips-social">
+                                <li><a href="#" aria-label="Robert Brown Twitter"><i
+                                            class="icon ion-social-twitter"></i></a></li>
+                                <li><a href="#" aria-label="Robert Brown Dribbble"><i
+                                            class="icon ion-social-dribbble"></i></a></li>
+                                <li><a href="#" aria-label="Robert Brown Instagram"><i
+                                            class="icon ion-social-instagram"></i></a></li>
+                                <li><a href="#" aria-label="Robert Brown Snapchat"><i
+                                            class="icon ion-social-snapchat"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="awesome-tips-description">
+                            <h5>Robert Brown</h5>
+                            <h6>Kitzbühel, Austria</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination" role="navigation" aria-label="Slider pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
