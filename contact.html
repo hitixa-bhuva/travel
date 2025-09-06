@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,7 +52,7 @@
         <!--  Header & Menu  -->
         <header id="header" class="fixed transparent full-width">
             <div class="container">
-                <nav class="navbar navbar-default white">
+                 <nav class="navbar navbar-default white">
                     <!--  Header Logo  -->
                     <div id="logo">
                         <a class="navbar-brand" href="index.html">
@@ -67,55 +67,94 @@
                     <div id="menu-classic">
                         <div class="menu-holder">
                             <ul>
-                                <li class="submenu">
-                                    <a href="javascript:void(0)">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home Classic</a></li>
-                                        <li><a href="index-carousel.html">Home Carousel</a></li>
-                                        <li><a href="index-showcase.html">Home Showcase</a></li>
-                                    </ul>
+                                <li class="submenu main-menu">
+                                    <a href="index.html" class="active-item">Home</a>
                                 </li>
-                                <li class="submenu">
-                                    <a href="javascript:void(0)">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about-me.html">About Me</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="single-trek.html">Single Trek 1</a></li>
-                                        <li><a href="single-trek-2.html">Single Trek 2</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
+                                <li class="submenu main-menu">
+                                  <a href="javascript:void(0)">About Us</a>
+                                  <ul class="sub-menu">
+
+                                    <!-- About Me with sub-dropdown -->
+                                    <li class="submenu m-0 submenu-padding">
+                                      <a href="our-purpose.html">Our Purpose</a></li>
+                                
+                                    <li class="m-0"><a class="p-0" href="our-chairman.html">Our Chairman</a></li>
+                                    <li class="m-0"><a class="p-0" href="our-team.html">Our Team</a></li>
+                                    <li class="m-0"><a class="p-0" href="our-client.html">Clients</a></li>
+                                    <li class="m-0"><a class="p-0" href="gallery.html">Gallery</a></li>
+                                  </ul>
+                                </li>
+
+                                <li>
+                                   <a href="javascript:void(0)"  id="destToggle">Destinations</a>
+                                     <div class="mega-overlay" id="megaOverlay"></div>
+
+                                         <div class="mega-menu" id="megaMenu" aria-hidden="true" role="dialog" aria-label="Destinations menu">
+                                           <button class="close-btn" id="megaClose" aria-label="Close menu">×</button>
+                                           <div class="mega-menu-inner">
+                                             <!-- Regions -->
+                                             <ul class="regions" role="menu">
+                                               <a href="africa.html"> <li data-region="africa" onmouseover="showCountries('africa'); showRegionImage('africa')">Africa<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="arctic.html"><li data-region="arctic" onmouseover="showCountries('arctic'); showRegionImage('arctic')">Arctic Circle<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="asia.html"><li data-region="asia" onmouseover="showCountries('asia'); showRegionImage('asia')">Asia<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="caribbean" onmouseover="showCountries('caribbean'); showRegionImage('caribbean')">Caribbean<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="europe" onmouseover="showCountries('europe'); showRegionImage('europe')">Europe<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="indianocean" onmouseover="showCountries('indianocean'); showRegionImage('indianocean')">Indian Ocean<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="indiansubcontinent" onmouseover="showCountries('indiansubcontinent'); showRegionImage('indiansubcontinent')">Indian Subcontinent<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="america" onmouseover="showCountries('america'); showRegionImage('america')">Latin America<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="middleeast" onmouseover="showCountries('middleeast'); showRegionImage('middleeast')">Middle East<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="northamerica" onmouseover="showCountries('northamerica'); showRegionImage('northamerica')">North America<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="southeastasia" onmouseover="showCountries('southeastasia'); showRegionImage('southeastasia')">South East Asia<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="southpacific" onmouseover="showCountries('southpacific'); showRegionImage('southpacific')">South Pacific<i class="bi bi-chevron-right"></i></li></a>
+                                                <a href="africa.html"><li data-region="a-z" onmouseover="showCountries('a-z'); showRegionImage('a-z')">A-Z Destinations<i class="bi bi-chevron-right"></i></li></a>
+                                             </ul>
+
+                                             <!-- Countries -->
+                                             <ul class="countries" id="africa">
+                                               <a href="botswana.html"><li>Botswana</li></a>
+                                               <a href=""><li>Congo</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>thiopia</li></a>
+                                               <a href=""><li>Ethiopia</li></a>
+                                               <a href=""><li>Kenya</li></a>
+                                               <a href=""><li>Madagascar</li></a>
+                                               <a href=""><li>Malawi</li></a>
+                                               <a href=""><li>Mauritius</li></a>
+                                               <a href=""><li>Morocco</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>
+                                               <a href=""><li>Egypt</li></a>   
+                                             </ul>
+                                             <ul class="countries" id="arctic">
+                                               <a href=""><li>Arctic Country 1</li></a>
+                                             </ul>
+                                             <ul class="countries" id="asia">
+                                               <a href=""><li>India</li></a>
+                                               <a href=""><li>China</li></a>
+                                             </ul>
+                                             <!-- Add other regions similarly -->
+
+                                             <div class="preview">
+                                               <img id="menuImage" src="https://media.cnn.com/api/v1/images/stellar/prod/180508141319-03-amazing-places-africa-victoria-falls.jpg?q=w_3080,h_1732,x_0,y_0,c_fill" alt="Destination preview">
+                                             </div>
+                                           </div>
+                                         </div>
                                 </li>
                                 <li>
-                                    <a href="treks.html">Treks</a>
-                                </li>
-                                <li class="submenu">
-                                    <a href="javascript:void(0)">Gallery</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery.html">Classic</a></li>
-                                        <li><a href="gallery-filters.html">Filters</a></li>
-                                        <li><a href="single-project-1.html">Single Project 1</a></li>
-                                        <li><a href="single-project-2.html">Single Project 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu">
-                                    <a href="javascript:void(0)">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-classic.html">Blog Classic</a></li>
-                                        <li><a href="standard-post.html">Image Post</a></li>
-                                        <li><a href="slider-post.html">Slider Post </a></li>
-                                        <li><a href="video-post.html">Video Post</a></li>
-                                    </ul>
+                                    <a href="package.html">Package</a>
                                 </li>
                                 <li>
-                                    <a href="elements.html">Elements</a>
+                                    <a href="group-companies.html">Group Companies</a>
                                 </li>
                                 <li>
-                                    <a href="contact-1.html" class="active-item">Contact</a>
+                                    <a href="contact.html">Contact</a>
                                 </li>
-                                <!-- Search Icon -->
-                                <li class="search">
-                                    <i class="icon ion-ios-search"></i>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -148,18 +187,18 @@
                     <!--  END Search Box  -->
                 </nav>
             </div>
-        </header>
+        </header>   
         <!--  END Header & Menu  -->
 
         <!--  Page Content, class footer-fixed if footer is fixed  -->
-        <div id="page-content" class="header-static footer-fixed">
+        <div id="page-content" class="">
             <!--  Slider  -->
             <div id="flexslider" class="fullpage-wrap small">
                 <ul class="slides">
                     <li style="background-image:url(assets/img/contact.jpg)">
                         <div class="container text text-center">
                             <h1 class="white margin-bottom-small">Contact Us</h1>
-                            <p class="heading white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam aperiam rerum quis atque, illum.</p>
+                            <!-- <p class="heading white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam aperiam rerum quis atque, illum.</p> -->
                         </div>
                         <div class="gradient dark"></div>
                     </li>
@@ -229,7 +268,7 @@
         <!--  END Page Content, class footer-fixed if footer is fixed  -->
 
         <!--  Footer. Class fixed for fixed footer  -->
-        <footer class="fixed full-width">
+        <footer class="">
             <div class="container">
                 <div class="row no-margin">
                     <div class="col-sm-4 col-md-2 padding-leftright-null">
